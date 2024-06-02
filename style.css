@@ -1,0 +1,706 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Prompt';
+}
+
+.header{
+    display: flex;
+    height: 90px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    background-color: black;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.06)
+}
+
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#navbar li{
+    list-style: none;
+    padding: 0 25px;
+    position: relative;
+}
+
+#navbar li a{
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 600;
+    color: white;
+}
+
+#navbar li a:hover,
+#navbar li a.active{
+    color: #D4AF37;
+}
+
+#navbar li a::after,
+#navbar li a.active::after{
+    content: "";
+    width: 0%;
+    height: 2px;
+    background: red;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+
+#navbar li a:hover::after,
+#navbar li a.active::after{
+    width: 75%;
+    transition: 0.3s ease;
+}
+
+.logo{
+    position: absolute;
+    width: 148px;
+    height: 120px;
+    left: 40px;
+    top: 6px;
+} 
+
+#first img{
+    width: 100%;
+}
+
+#second{
+    padding: 50px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+#second h2{
+    padding-top: 20px;
+    padding-bottom: 15px;
+    padding-left: 122px;
+    font-size: 48px;
+}
+
+#second p{
+    padding-bottom: 15px;
+    padding-top: 20px;
+    padding-left: 78px;
+    font-size: 26px;
+    text-align: justify;
+    width: 680px;
+    line-height: 43px;
+    font-weight: 600;
+    font-style: normal;
+}
+
+#second img{
+    width: 45%;
+    height: 63%;
+    transform: rotate(90.45deg);
+    position: absolute;
+    left: 735px;
+    top: 720px;
+    bottom: 720px;
+}
+
+#third .videobro{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    width: 100%;
+    top: 1225px;
+}
+
+#third .cool{
+    margin-top: 150px;
+    padding-left: 30px;
+    position: absolute;
+    color: white;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 46px;
+    text-align: center;
+    width: 451px;
+}
+
+#empat .out{
+    position: absolute;
+    width: 100%;
+    height: 630px;
+    left: 0px;
+    top: 1970px;
+    background: #D4AF37;
+    box-shadow: 0px 10px 40px rgba(0, 15, 129, 0.08);
+    border-radius: 10px;
+}
+
+#empat h1{
+    position: absolute;
+    top: 30px;
+    left: 29%;
+    
+    font-weight: 600;
+    font-size: 50px;
+    line-height: 46px;
+
+    text-align: center;
+    color: #000000;
+}
+
+#empat .kotak1{
+    position: absolute;
+    width:  25%;
+    height: 75%;
+    left: 50px;
+    top: 110px;
+    background: black;
+    box-shadow: 0px 10px 40px rgba(0, 15, 129, 0.08);
+}
+
+#empat .kotak12{
+    position: absolute;
+    width:  auto;
+    height: auto;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    background: white;
+    box-shadow: 0px 10px 40px rgba(0, 15, 129, 0.08);
+}
+
+.kotak12 .fotomtg{
+    position: absolute;
+    width: 100%;
+    top: 10px;
+}
+
+.fotomtg:hover,
+.fotodark:hover,
+.tagnih:hover,
+.rapi:hover,
+.rapi4:hover,
+#special:hover,
+#yew:hover{
+    transform: scale(1.1);
+}
+
+.kotak12 .words{
+    position: absolute;
+    font-weight: 600;
+    text-align: center;
+    line-height: 25px;
+    top: 70%;
+    left: 17%;
+}
+
+.words .pencet{
+    background-color: black;
+    color: white;
+    border: 0;
+    margin-top: 5px;
+    padding: 10px 50px 10px 50px;
+    background-repeat: no-repeat;
+    font-weight: 600;
+    border-radius: 10px;
+}
+
+.pencet a{
+    text-decoration: None;
+    color: white;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.pencet:hover{
+    background-color:red;
+    transform: scale(0.9);
+    transition: 0.3s ease;
+}
+
+#lima .kotak1{
+    position: absolute;
+    width:  25%;
+    height: 75%;
+    left: 480px;
+    top: 2080px;
+    background: black;
+    box-shadow: 0px 10px 40px rgba(0, 15, 129, 0.08);
+}
+
+#lima .kotak12{
+    position: absolute;
+    width:  auto;
+    height: auto;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    background: white;
+    box-shadow: 0px 10px 40px rgba(0, 15, 129, 0.08);
+}
+
+.kotak12 .fotodark{
+    width: 75%;
+    padding-left: 12%;
+}
+
+#six .kotak1{
+    position: absolute;
+    width:  25%;
+    height: 75%;
+    left: 900px;
+    top: 2080px;
+    background: black;
+    box-shadow: 0px 10px 40px rgba(0, 15, 129, 0.08);
+}
+
+#six .kotak12{
+    position: absolute;
+    width:  auto;
+    height: auto;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    background: white;
+    box-shadow: 0px 10px 40px rgba(0, 15, 129, 0.08);
+}
+
+.kotak12 .tagnih{
+    width: 58%;
+    padding-top: 15px;
+    padding-left: 25%;
+}
+
+.kotak12 .wordsnya{
+    position: absolute;
+    font-weight: 600;
+    text-align: center;
+    line-height: 25px;
+    top: 70%;
+    left: 15%;
+}
+
+.wordsnya .pencetya{
+    background-color: black;
+    color: white;
+    border: 0;
+    margin-top: 5px;
+    padding: 10px 50px 10px 50px;
+    background-repeat: no-repeat;
+    font-weight: 600;
+    border-radius: 10px;
+}
+
+.pencetya a{
+    text-decoration: None;
+    color: white;
+    cursor: pointer;
+    font-weight: 600;
+    
+}
+
+.pencetya:hover{
+    background-color:red;
+    transform: scale(0.9);
+    transition: 0.3s ease;
+}
+
+#seven .cr7{
+    position: absolute;
+    width: 100%;
+    height:580px;
+    left: 0px;
+    top: 2640px;
+    background: #282D40;
+    box-shadow: 0px 10px 40px rgba(0, 15, 129, 0.08);
+}
+
+.cr7 img{
+    width: 40%;
+    padding: 35px 30px 30px 30px; 
+}
+
+.cr7talk h1{
+    position: absolute;
+    width: 626px;
+    height: auto;
+    left: 600px;
+    top: 30px;
+    font-weight: 600;
+    font-size: 60px;
+    line-height: 80px;
+    text-align: center;
+    color: red; 
+}
+
+.cr7talk h2.hadeh1{
+    position: absolute;
+    width: 600px;
+    height: auto;
+    left: 615px;
+    top: 100px;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 80px;
+    text-align: center;
+    color: white;    
+}
+
+.cr7talk h2.hadeh2{
+    position: absolute;
+    width: 600px;
+    height: auto;
+    left: 615px;
+    top: 245px;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 80px;
+    text-align: center;
+    color: white;    
+}
+
+.cr7talk h2.hadeh3{
+    position: absolute;
+    width: 600px;
+    height: auto;
+    left: 480px;
+    top: 320px;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 80px;
+    text-align: center;
+    color: white;    
+}
+
+.cr7talk h2.hadeh4{
+    position: absolute;
+    width: auto;
+    height: auto;
+    left: 900px;
+    top: 320px;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 80px;
+    text-align: center;
+    color: red;    
+}
+
+.cr7talk h2.hadeh5{
+    position: absolute;
+    width: auto;
+    height: auto;
+    left: 1100px;
+    top: 320px;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 80px;
+    text-align: center;
+    color: white;    
+}
+
+.cr7talk h2.hadeh6{
+    position: absolute;
+    width: 600px;
+    height: auto;
+    left: 615px;
+    top: 390px;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 80px;
+    text-align: center;
+    color: white;    
+}
+
+.letsgo{
+    margin-top: -100px;
+    margin-left: 710px;
+}
+
+.letsgo .explore{
+    position: absolute;
+    background-color: red;
+    border: 0;
+    padding: 15px 5px 15px 5px;
+    width: 400px;
+    background-repeat: no-repeat;
+    font-weight: 900;
+    font-size: 25px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.letsgo a{
+    text-decoration: None;
+    color: black;
+    font-weight: 600;
+}
+
+.explore:hover{
+    background-color: #D4AF37;
+    transform: scale(1.1);
+    transition: 0.3s ease;
+}
+
+#lapan .brand{
+    position: absolute;
+    height: 320px;
+    left: 30px;
+    top: 3260px;
+    width: 95.3%;
+    margin-right: 30px;
+    background: #D4AF37;
+    box-shadow: 0px 10px 40px rgba(0, 15, 129, 0.08);
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 30px;
+}
+
+.brand h1{
+    margin-top: 15px;
+    text-align: center;
+}
+
+.masukinlogo img{
+    width: 23%;
+    margin-left: 30px;
+}
+
+#special{
+    width: 15%;
+}
+
+#yew{
+    width: 24%;
+}
+
+.footer{
+    margin-top: 2470px;
+    background-color: black;
+    height: 310px;
+}
+
+.footer .social{
+    position: absolute;
+    text-align: center;
+} 
+
+.social .logofoot{
+    width: 43%;
+}
+
+.social h4{
+    justify-content: center;
+    padding-top: 5px;
+    font-weight: 100;
+    padding-bottom: 10px;
+}
+
+.social .ikon{
+    color: #D4AF37;
+}
+
+.ikon:hover{
+    color: white;
+}
+
+.social h4.follow{
+    color: white;
+}
+
+.social h4.mail{
+    color: white;
+}
+
+.footerend{
+    justify-content: center;
+    height: auto;
+    background-color: #D4AF37;
+}
+
+.footerend h5{
+    font-size: 20px;
+    line-height: 4;
+    text-align: center;
+}
+
+.footer .site{
+    margin-left: 40%;
+    padding-top: 60px;
+    width: 200px;
+}
+
+.site h2{
+    color: white;
+    font-size: 16;
+    font-weight: 10%;
+    padding-bottom: 10px;
+    width: 120px;
+}
+
+.site li{
+    list-style: none;
+    padding: 3px;
+    width: 120px;
+}
+
+.site a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 20px;
+}
+
+.site a:hover{
+    color: gold;
+    font-weight: 800;
+}
+
+.footer .supp{
+    width: 400px;
+    margin-left: 55%;
+    margin-top: -196px;
+}
+
+.supp h2{
+    color: white;
+    font-size: 16;
+    font-weight: 10%;
+    padding-bottom: 10px;
+    width: 120px;
+}
+
+.supp li{
+    list-style: none;
+    padding: 3px;
+    width: 230px;
+}
+
+.supp a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 20px;
+}
+
+.supp a:hover{
+    color: gold;
+    font-weight: 800;
+}
+
+.footer .company{
+    margin-left: 78%;
+    margin-top: -168px;
+}
+
+.company h2{
+    color: white;
+    font-size: 16;
+    font-weight: 10%;
+    padding-bottom: 10px;
+    width: 120px;
+}
+
+.company li{
+    list-style: none;
+    padding: 3px;
+    width: 230px;
+}
+
+.company a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 20px;
+}
+
+.company a:hover{
+    color: gold;
+    font-weight: 800;
+}
+
+@media(max-width: 800px){
+    .header img{
+        width: 15%;
+        height: auto;
+    }
+
+    .header nav #navbar li{
+        width: 7%;
+        justify-content: space-between;
+    }
+    .header nav #navbar li a{
+        font-size: 15px;
+    }
+
+    #second h2{
+        font-size: 15px;
+    }
+
+    #second p{
+        width: 50%;
+        font-size: 10px;
+        margin-left: -50px;
+    }
+
+    #second img{
+        width: 400px;
+        margin-left: -380px;
+        margin-top: -300px;
+    }
+
+    .footer .social a img{
+        width: 30%;
+    }
+
+    .footer{
+        margin-top: 2600px;
+    }
+
+    .footer .social h4{
+        font-size: 10px;
+    }
+
+     .social{
+        margin-left: -150px;
+    }
+
+    .footer .site h2{
+        font-size: 22px;
+        margin-left: -50px;
+    }
+
+    .footer .supp h2,
+    .footer .company h2{
+        font-size: 20px;
+        margin-left: -20px;
+        
+    }
+
+    .footer .site li a,
+    .footer .supp li a,
+    .footer .company li a{
+        font-size: 10px;
+        margin-left: -20px;
+    }
+
+    .footer .site li a{
+        margin-left: -50px;
+    }
+
+    .footer .company{
+        width: 50px;
+    }
+}

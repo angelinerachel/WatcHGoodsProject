@@ -1,0 +1,791 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Prompt';
+}
+
+body{
+    background-color: white;
+}
+
+.header{
+    display: flex;
+    height: 90px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    background-color: black;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.06)
+}
+
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#navbar li{
+    list-style: none;
+    padding: 0 25px;
+    position: relative;
+}
+
+#navbar li a{
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 600;
+    color: white;
+}
+
+#navbar li a:hover,
+#navbar li a.active{
+    color: #D4AF37;
+}
+
+#navbar li a::after,
+#navbar li a.active::after{
+    content: "";
+    width: 0%;
+    height: 2px;
+    background: red;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+
+#navbar li a:hover::after,
+#navbar li a.active::after{
+    width: 75%;
+    transition: 0.3s ease;
+}
+
+.logo{
+    position: absolute;
+    width: 148px;
+    height: 120px;
+    left: 40px;
+    top: 6px;
+}
+
+.andri{
+    background-color: #282D40;
+    height: 490px;
+    display: flex;
+}
+
+.andri .ts img{
+    width: 80%;
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+.andri .gwg{
+    margin-left: 5px;
+}
+
+.andri .gwg h1{
+    font-family: 'Prompt';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 60px;
+    line-height: 150px;
+    text-align: center;
+    color: white;
+}
+
+.gwg .rach h1{
+    margin-top: 100px;
+}
+
+.gwg .musik h1{
+    margin-top: -50px;
+}
+
+.judul{
+    margin-top: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+    background: #D4AF37;
+    box-shadow: 0px 10px 40px rgba(0, 15, 129, 0.08);
+    border-radius: 10px;
+}
+
+.judul h1{
+    font-family: 'Prompt';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 46px;
+    text-align: center;
+    padding: 20px 20px;
+}
+
+.ft{
+    margin-top: 40px;
+}
+
+.ft .indo{
+    position: absolute;
+    background-color: black;
+    height: 500px;
+    width: 30%;
+    margin-left: 2%;
+}
+
+.indo .jkt{
+    background-color: white;
+    width: auto;
+    height: 445px;
+    margin: 20px 20px;
+    display: flex;
+}
+
+.jkt .pluit{
+    position: relative;
+    margin: 2px 2px;
+}
+
+.pluit img{
+    width: 88%;
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.alsut .kota h1{
+    font-family: 'Prompt';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 46px;
+    text-align: center;
+}
+
+.alsut .isi h3{
+    font-family: 'Prompt';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 30px;
+    text-align: center;
+}
+
+.alsut .pencet{
+    background-color: #D4AF37;
+    margin-top: 5px;
+    margin-left: 30px;
+    margin-right: 30px;
+    padding: 15px 15px;
+    background-repeat: no-repeat;
+    font-weight: 600;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.pencet a{
+    text-decoration: None;
+    color: black;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.pencet:hover{
+    background-color:red;
+    transform: scale(1.1);
+    transition: 0.5s ease;
+}
+
+.st{
+    margin-top: 40px;
+    margin-left: 33%;
+}
+
+.st .japan{
+    position: absolute;
+    background-color: black;
+    height: 500px;
+    width: 30%;
+    margin-left: 2%;
+}
+
+.japan .tokyo{
+    background-color: white;
+    width: auto;
+    height: 445px;
+    margin: 20px 20px;
+    display: flex;
+}
+
+.tokyo .marvel{
+    position: relative;
+    margin: 2px 2px;
+}
+
+.marvel img{
+    width: 88%;
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.hadehwe .velbod h1{
+    font-family: 'Prompt';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 46px;
+    text-align: center;
+}
+
+.hadehwe .pelel h3{
+    font-family: 'Prompt';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 30px;
+    text-align: center;
+}
+
+.hadehwe .pencet{
+    background-color: #D4AF37;
+    margin-top: 5px;
+    margin-left: 30px;
+    margin-right: 30px;
+    padding: 15px 15px;
+    background-repeat: no-repeat;
+    font-weight: 600;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.pencet a{
+    text-decoration: None;
+    color: black;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.pencet:hover{
+    background-color:red;
+    transform: scale(1.1);
+    transition: 0.5s ease;
+}
+
+.abg{
+    margin-top: 40px;
+    margin-left: 66%;
+}
+
+.abg .us{
+    position: absolute;
+    background-color: black;
+    height: 500px;
+    width: 30%;
+    margin-left: 2%;
+}
+
+.us .joe{
+    background-color: white;
+    width: auto;
+    height: 445px;
+    margin: 20px 20px;
+    display: flex;
+}
+
+.joe .biden{
+    position: relative;
+    margin: 2px 2px;
+}
+
+.biden img{
+    width: 88%;
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.trump .reign h1{
+    font-family: 'Prompt';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 46px;
+    text-align: center;
+}
+
+.trump .aivie h3{
+    font-family: 'Prompt';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 30px;
+    text-align: center;
+}
+
+.trump .atet{
+    background-color: #D4AF37;
+    margin-top: 5px;
+    margin-left: 30px;
+    margin-right: 30px;
+    padding: 15px 15px;
+    background-repeat: no-repeat;
+    font-weight: 600;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.atet a{
+    text-decoration: None;
+    color: black;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.atet:hover{
+    background-color:red;
+    transform: scale(1.1);
+    transition: 0.5s ease;
+}
+
+.rdj{
+    margin-top: 600px;
+}
+
+.rdj .iron{
+    position: absolute;
+    background-color: black;
+    height: 500px;
+    width: 30%;
+    margin-left: 2%;
+}
+
+.iron .man{
+    background-color: white;
+    width: auto;
+    height: 445px;
+    margin: 20px 20px;
+    display: flex;
+}
+
+.man .tony{
+    position: relative;
+    margin: 2px 2px;
+}
+
+.tony img{
+    width: 88%;
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.stark .ind h1{
+    font-family: 'Prompt';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 46px;
+    text-align: center;
+}
+
+.stark .downey h3{
+    font-family: 'Prompt';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 30px;
+    text-align: center;
+}
+
+.stark .rob{
+    background-color: #D4AF37;
+    margin-top: 5px;
+    margin-left: 30px;
+    margin-right: 30px;
+    padding: 15px 15px;
+    background-repeat: no-repeat;
+    font-weight: 600;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.rob a{
+    text-decoration: None;
+    color: black;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.rob:hover{
+    background-color:red;
+    transform: scale(1.1);
+    transition: 0.5s ease;
+}
+
+.ch{
+    margin-top: 600px;
+    margin-left: 33%;
+}
+
+.ch .aus{
+    position: absolute;
+    background-color: black;
+    height: 500px;
+    width: 30%;
+    margin-left: 2%;
+}
+
+.aus .thor{
+    background-color: white;
+    width: auto;
+    height: 445px;
+    margin: 20px 20px;
+    display: flex;
+}
+
+.thor .ragnarok{
+    position: relative;
+    margin: 2px 2px;
+}
+
+.ragnarok img{
+    width: 88%;
+    height: 45%;
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.love .thunder h1{
+    font-family: 'Prompt';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 46px;
+    text-align: center;
+}
+
+.love .lightning h3{
+    font-family: 'Prompt';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 30px;
+    text-align: center;
+}
+
+.love .rob{
+    background-color: #D4AF37;
+    margin-top: 5px;
+    margin-left: 30px;
+    margin-right: 30px;
+    padding: 15px 15px;
+    background-repeat: no-repeat;
+    font-weight: 600;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.rob a{
+    text-decoration: None;
+    color: black;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.rob:hover{
+    background-color:red;
+    transform: scale(1.1);
+    transition: 0.5s ease;
+}
+
+.braz{
+    margin-top: 600px;
+    margin-left: 66%;
+}
+
+.braz .il{
+    position: absolute;
+    background-color: black;
+    height: 500px;
+    width: 30%;
+    margin-left: 2%;
+}
+
+.il .sepak{
+    background-color: white;
+    width: auto;
+    height: 445px;
+    margin: 20px 20px;
+    display: flex;
+}
+
+.sepak .bola{
+    position: relative;
+    margin: 2px 2px;
+}
+
+.bola img{
+    width: 88%;
+    height: 45%;
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.basket .jersey h1{
+    font-family: 'Prompt';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 46px;
+    text-align: center;
+}
+
+.basket .ball h3{
+    font-family: 'Prompt';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 30px;
+    text-align: center;
+}
+
+.basket .rob{
+    background-color: #D4AF37;
+    margin-top: 5px;
+    margin-left: 30px;
+    margin-right: 30px;
+    padding: 15px 15px;
+    background-repeat: no-repeat;
+    font-weight: 600;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.rob a{
+    text-decoration: None;
+    color: black;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.rob:hover{
+    background-color:red;
+    transform: scale(1.1);
+    transition: 0.5s ease;
+}
+
+.footer{
+    margin-top: 1140px;
+    background-color: black;
+    height: 310px;
+}
+
+.footer .social{
+    position: absolute;
+    text-align: center;
+} 
+
+.social .logofoot{
+    width: 43%;
+}
+
+.social h4{
+    justify-content: center;
+    padding-top: 5px;
+    font-weight: 100;
+    padding-bottom: 10px;
+}
+
+.social .ikon{
+    color: #D4AF37;
+}
+
+.ikon:hover{
+    color: white;
+}
+
+.social h4.follow{
+    color: white;
+}
+
+.social h4.mail{
+    color: white;
+}
+
+.footerend{
+    justify-content: center;
+    height: auto;
+    background-color: #D4AF37;
+}
+
+.footerend h5{
+    font-size: 20px;
+    line-height: 4;
+    text-align: center;
+}
+
+.footer .site{
+    margin-left: 40%;
+    padding-top: 60px;
+    width: 200px;
+}
+
+.site h2{
+    color: white;
+    font-size: 16;
+    font-weight: 10%;
+    padding-bottom: 10px;
+    width: 120px;
+}
+
+.site li{
+    list-style: none;
+    padding: 3px;
+    width: 120px;
+}
+
+.site a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 20px;
+}
+
+.site a:hover{
+    color: gold;
+    font-weight: 800;
+}
+
+.footer .supp{
+    width: 400px;
+    margin-left: 55%;
+    margin-top: -196px;
+}
+
+.supp h2{
+    color: white;
+    font-size: 16;
+    font-weight: 10%;
+    padding-bottom: 10px;
+    width: 120px;
+}
+
+.supp li{
+    list-style: none;
+    padding: 3px;
+    width: 230px;
+}
+
+.supp a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 20px;
+}
+
+.supp a:hover{
+    color: gold;
+    font-weight: 800;
+}
+
+.footer .company{
+    margin-left: 78%;
+    margin-top: -168px;
+}
+
+.company h2{
+    color: white;
+    font-size: 16;
+    font-weight: 10%;
+    padding-bottom: 10px;
+    width: 120px;
+}
+
+.company li{
+    list-style: none;
+    padding: 3px;
+    width: 230px;
+}
+
+.company a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 20px;
+}
+
+.company a:hover{
+    color: gold;
+    font-weight: 800;
+}
+
+@media(max-width: 800px){
+    .header img{
+        width: 15%;
+        height: auto;
+    }
+
+    .header nav #navbar li{
+        width: 7%;
+        justify-content: space-between;
+    }
+    .header nav #navbar li a{
+        font-size: 15px;
+    }
+
+    
+
+    .footer .social a img{
+        width: 30%;
+    }
+
+    .footer{
+        margin-top: 1130px;
+    }
+
+    .footer .social h4{
+        font-size: 10px;
+    }
+
+     .social{
+        margin-left: -150px;
+    }
+
+    .footer .site h2{
+        font-size: 22px;
+        margin-left: -50px;
+    }
+
+    .footer .supp h2,
+    .footer .company h2{
+        font-size: 20px;
+        margin-left: -20px;
+        
+    }
+
+    .footer .site li a,
+    .footer .supp li a,
+    .footer .company li a{
+        font-size: 10px;
+        margin-left: -20px;
+    }
+
+    .footer .site li a{
+        margin-left: -50px;
+    }
+
+    .footer .company{
+        width: 50px;
+    }
+}

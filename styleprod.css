@@ -1,0 +1,1055 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Prompt';
+}
+
+.header{
+    display: flex;
+    height: 90px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    background-color: black;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.06)
+}
+
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#navbar li{
+    list-style: none;
+    padding: 0 25px;
+    position: relative;
+}
+
+#navbar li a{
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 600;
+    color: white;
+}
+
+#navbar li a:hover,
+#navbar li a.active{
+    color: #D4AF37;
+}
+
+#navbar li a::after,
+#navbar li a.active::after{
+    content: "";
+    width: 0%;
+    height: 2px;
+    background: red;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+
+#navbar li a:hover::after,
+#navbar li a.active::after{
+    width: 75%;
+    transition: 0.3s ease;
+}
+
+.logo{
+    position: absolute;
+    width: 148px;
+    height: 120px;
+    left: 40px;
+    top: 6px;
+} 
+
+.hemsworth{
+    background-color: #D4AF37;
+    height: 490px;
+    display: flex;
+}
+
+.hemsworth .gwg img{
+    width: 65%;
+    margin-top: 16px;
+    margin-left: 90px;
+}
+
+.hemsworth .ts{
+    width: 90%;
+    margin-top: 60px;
+    margin-left: 60px;
+}
+
+.hemsworth .ts h1{
+    font-family: 'Prompt';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 45px;
+    line-height: 90px;
+    text-align: center;
+    color: black;
+}
+
+.rolex{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.rolex img{
+    width: 25%;   
+}
+
+.jamrol{
+    background-color: #D4AF37;
+    height: 630px;
+}
+
+.jamrol .depan{
+    position: absolute;
+    background-color: black;
+    height: 580px;
+    width: 30%;
+    margin-left: 2%;
+    margin-top: 2%;
+}
+
+.depan .dalam{
+    background-color: white;
+    width: auto;
+    height: 550px;
+    margin: 15px 15px;
+}
+
+.dalam .isi{
+    position: relative;
+    margin: 2px 2px;
+    text-align: center;
+}
+
+.isi img{
+    width: 55%;
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.isi .try{
+    font-family: 'Prompt';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 46px;
+    text-align: center;
+}
+
+.coba .price{
+    margin-left: 20%;
+}
+
+.coba .sale{
+    margin-left: 10px;
+    color: red;
+}
+
+
+.coba .pencet{
+    background-color: black;
+    margin-top: 5px;
+    margin-left: 30px;
+    margin-right: 30px;
+    padding: 10px 10px;
+    background-repeat: no-repeat;
+    font-weight: 600;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.pencet a{
+    text-decoration: None;
+    color: white;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.pencet:hover{
+    background-color:red;
+    transform: scale(0.9);
+    transition: 0.5s ease;
+}
+
+.isi img:hover{
+    transform: scale(1.1);
+    transition: 0.3s ease;
+}
+
+.jamtu{
+    margin-left: 33%;
+}
+
+.jamtu .ap{
+    position: absolute;
+    background-color: black;
+    height: 580px;
+    width: 30%;
+    margin-left: 2%;
+    margin-top: 2%;
+}
+
+.ap .don{
+    background-color: white;
+    width: auto;
+    height: 550px;
+    margin: 15px 15px;
+}
+
+.don .isi{
+    position: relative;
+    margin: 2px 2px;
+    text-align: center;
+}
+
+.isi img{
+    width: 55%;
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.isi .try{
+    font-family: 'Prompt';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 46px;
+    text-align: center;
+}
+
+.coba .price{
+    display:flex;
+    margin-left: 20%;
+}
+
+.coba .sale{
+    margin-left: 10px;
+    color: red;
+}
+
+.coba .pencet{
+    background-color: black;
+    margin-top: 5px;
+    margin-left: 30px;
+    margin-right: 30px;
+    padding: 10px 10px;
+    background-repeat: no-repeat;
+    font-weight: 600;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.pencet a{
+    text-decoration: None;
+    color: white;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.pencet:hover{
+    background-color:red;
+    transform: scale(0.9);
+    transition: 0.5s ease;
+}
+
+.jamtri{
+    margin-left: 66%;
+}
+
+.jamtri .ap{
+    position: absolute;
+    background-color: black;
+    height: 580px;
+    width: 30%;
+    margin-left: 2%;
+    margin-top: 2%;
+}
+
+.jamtu .ap{
+    position: absolute;
+    background-color: black;
+    height: 580px;
+    width: 30%;
+    margin-left: 2%;
+    margin-top: 2%;
+}
+
+.ap .don{
+    background-color: white;
+    width: auto;
+    height: 550px;
+    margin: 15px 15px;
+}
+
+.don .spec{
+    position: relative;
+    margin: 2px 2px;
+    text-align: center;
+}
+
+.spec img{
+    width: 56.5%;
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.spec .try{
+    font-family: 'Prompt';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 46px;
+    text-align: center;
+}
+
+.coba .price{
+    display:flex;
+    margin-left: 20%;
+}
+
+.coba .sale{
+    margin-left: 10px;
+    color: red;
+}
+
+.coba .pencet{
+    background-color: black;
+    margin-top: 5px;
+    margin-left: 30px;
+    margin-right: 30px;
+    padding: 10px 10px;
+    background-repeat: no-repeat;
+    font-weight: 600;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.pencet a{
+    text-decoration: None;
+    color: white;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.pencet:hover{
+    background-color:red;
+    transform: scale(0.9);
+    transition: 0.3s ease;
+}
+
+.spec img:hover{
+    transform:scale(1.1);
+    transition: 0.3s ease;
+}
+
+.omega{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.omega img{
+    width: 25%;   
+}
+
+.jamlon{
+    background-color: #D4AF37;
+    height: 630px;
+}
+
+.jamlon .fir{
+    position: absolute;
+    background-color: black;
+    height: 580px;
+    width: 30%;
+    margin-left: 2%;
+    margin-top: 2%;
+}
+
+.fir .sec{
+    background-color: white;
+    width: auto;
+    height: 550px;
+    margin: 15px 15px;
+}
+
+.sec .cos{
+    position: relative;
+    margin: 2px 2px;
+    text-align: center;
+}
+
+.cos img{
+    width: 60%;
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.cos .csc{
+    font-family: 'Prompt';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 46px;
+    text-align: center;
+}
+
+.tan .price{
+    margin-left: 20%;
+}
+
+.csc .push{
+    background-color: black;
+    margin-top: 5px;
+    margin-left: 30px;
+    margin-right: 30px;
+    padding: 10px 10px;
+    background-repeat: no-repeat;
+    font-weight: 600;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.push a{
+    text-decoration: None;
+    color: white;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.push:hover{
+    background-color:red;
+    transform: scale(0.9);
+    transition: 0.5s ease;
+}
+
+.cos img:hover{
+    transform: scale(1.1);
+    transition: 0.3s ease;
+}
+
+.jamjul{
+    margin-left: 33%;
+}
+
+.jamjul .fir{
+    position: absolute;
+    background-color: black;
+    height: 580px;
+    width: 30%;
+    margin-left: 2%;
+    margin-top: 2%;
+}
+
+.jammex{
+    margin-left: 66%;
+}
+
+.jammex .fir{
+    position: absolute;
+    background-color: black;
+    height: 580px;
+    width: 30%;
+    margin-left: 2%;
+    margin-top: 2%;
+}
+
+.shock{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.shock img{
+    width: 25%; 
+}
+
+.sokwe{
+    background-color: #D4AF37;
+    height: 630px;
+}
+
+.sokwe .rif{
+    position: absolute;
+    background-color: black;
+    height: 580px;
+    width: 30%;
+    margin-left: 2%;
+    margin-top: 2%;
+}
+
+.rif .ces{
+    background-color: white;
+    width: auto;
+    height: 550px;
+    margin: 15px 15px;
+}
+
+.ces .soc{
+    position: relative;
+    margin: 2px 2px;
+    text-align: center;
+}
+
+.soc img{
+    width: 70%;
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.soc .scs{
+    font-family: 'Prompt';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 46px;
+    text-align: center;
+}
+
+.scs .hush{
+    background-color: black;
+    margin-top: 5px;
+    margin-left: 30px;
+    margin-right: 30px;
+    padding: 10px 10px;
+    background-repeat: no-repeat;
+    font-weight: 600;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.hush a{
+    text-decoration: None;
+    color: white;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.hush:hover{
+    background-color:red;
+    transform: scale(0.9);
+    transition: 0.5s ease;
+}
+
+.soc img:hover{
+    transform: scale(1.1);
+    transition: 0.3s ease;
+}
+
+.wesok{
+    margin-left: 33%;
+}
+
+.wesok .rif{
+    position: absolute;
+    background-color: black;
+    height: 580px;
+    width: 30%;
+    margin-left: 2%;
+    margin-top: 2%;
+}
+
+.swek{
+    margin-left: 66%;
+}
+
+.swek .rif{
+    position: absolute;
+    background-color: black;
+    height: 580px;
+    width: 30%;
+    margin-left: 2%;
+    margin-top: 2%;
+}
+
+.ces .ros{
+    position: relative;
+    margin: 2px 2px;
+    text-align: center;
+}
+
+.ros img{
+    width: 84%;
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.ros .scs{
+    font-family: 'Prompt';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 46px;
+    text-align: center;
+}
+
+.scs .hush{
+    background-color: black;
+    margin-top: 5px;
+    margin-left: 30px;
+    margin-right: 30px;
+    padding: 10px 10px;
+    background-repeat: no-repeat;
+    font-weight: 600;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.hush a{
+    text-decoration: None;
+    color: white;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.hush:hover{
+    background-color:red;
+    transform: scale(0.9);
+    transition: 0.5s ease;
+}
+
+.ros img:hover{
+    transform: scale(1.1);
+    transition: 0.3s ease;
+}
+
+.th{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.th img{
+    width: 20%; 
+}
+
+.teh{
+    background-color: #D4AF37;
+    height: 630px;
+}
+
+.teh .rif{
+    position: absolute;
+    background-color: black;
+    height: 580px;
+    width: 30%;
+    margin-left: 2%;
+    margin-top: 2%;
+}
+
+.tah{
+    margin-left: 33%;
+}
+
+.tah .rif{
+    position: absolute;
+    background-color: black;
+    height: 580px;
+    width: 30%;
+    margin-left: 2%;
+    margin-top: 2%;
+}
+
+.ces .and{
+    position: relative;
+    margin: 2px 2px;
+    text-align: center;
+}
+
+.and img{
+    width: 59.7%;
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.and .ats{
+    font-family: 'Prompt';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 46px;
+    text-align: center;
+}
+
+.and .huy{
+    background-color: black;
+    margin-top: 5px;
+    margin-left: 30px;
+    margin-right: 30px;
+    padding: 10px 10px;
+    background-repeat: no-repeat;
+    font-weight: 600;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.huy a{
+    text-decoration: None;
+    color: white;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.huy:hover{
+    background-color:red;
+    transform: scale(0.9);
+    transition: 0.5s ease;
+}
+
+.and img:hover{
+    transform: scale(1.1);
+    transition: 0.3s ease;
+}
+
+.toh{
+    margin-left: 66%;
+}
+
+.toh .rif{
+    position: absolute;
+    background-color: black;
+    height: 580px;
+    width: 30%;
+    margin-left: 2%;
+    margin-top: 2%;
+}
+
+.ces .rosa{
+    position: relative;
+    margin: 2px 2px;
+    text-align: center;
+}
+
+.rosa img{
+    width: 52.5%;
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.rosa .bela{
+    font-family: 'Prompt';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 46px;
+    text-align: center;
+}
+
+.bela .blub{
+    background-color: black;
+    margin-top: 5px;
+    margin-left: 30px;
+    margin-right: 30px;
+    padding: 10px 10px;
+    background-repeat: no-repeat;
+    font-weight: 600;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.blub a{
+    text-decoration: None;
+    color: white;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.blub:hover{
+    background-color:red;
+    transform: scale(0.9);
+    transition: 0.5s ease;
+}
+
+.rosa img:hover{
+    transform: scale(1.1);
+    transition: 0.3s ease;
+}
+
+.footer{
+    margin-top: 40px;
+    background-color: black;
+    height: 310px;
+}
+
+.footer .social{
+    position: absolute;
+    text-align: center;
+} 
+
+.social .logofoot{
+    width: 43%;
+}
+
+.social h4{
+    justify-content: center;
+    padding-top: 5px;
+    font-weight: 100;
+    padding-bottom: 10px;
+}
+
+.social .ikon{
+    color: #D4AF37;
+}
+
+.ikon:hover{
+    color: white;
+}
+
+.social h4.follow{
+    color: white;
+}
+
+.social h4.mail{
+    color: white;
+}
+
+.footerend{
+    justify-content: center;
+    height: auto;
+    background-color: #D4AF37;
+}
+
+.footerend h5{
+    font-size: 20px;
+    line-height: 4;
+    text-align: center;
+}
+
+.footer .site{
+    margin-left: 40%;
+    padding-top: 60px;
+    width: 200px;
+}
+
+.site h2{
+    color: white;
+    font-size: 16;
+    font-weight: 10%;
+    padding-bottom: 10px;
+    width: 120px;
+}
+
+.site li{
+    list-style: none;
+    padding: 3px;
+    width: 120px;
+}
+
+.site a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 20px;
+}
+
+.site a:hover{
+    color: gold;
+    font-weight: 800;
+}
+
+.footer .supp{
+    width: 400px;
+    margin-left: 55%;
+    margin-top: -196px;
+}
+
+.supp h2{
+    color: white;
+    font-size: 16;
+    font-weight: 10%;
+    padding-bottom: 10px;
+    width: 120px;
+}
+
+.supp li{
+    list-style: none;
+    padding: 3px;
+    width: 230px;
+}
+
+.supp a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 20px;
+}
+
+.supp a:hover{
+    color: gold;
+    font-weight: 800;
+}
+
+.footer .company{
+    margin-left: 78%;
+    margin-top: -168px;
+}
+
+.company h2{
+    color: white;
+    font-size: 16;
+    font-weight: 10%;
+    padding-bottom: 10px;
+    width: 120px;
+}
+
+.company li{
+    list-style: none;
+    padding: 3px;
+    width: 230px;
+}
+
+.company a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 20px;
+}
+
+.company a:hover{
+    color: gold;
+    font-weight: 800;
+}
+
+@media (max-width: 800px){
+    .header img{
+        width: 15%;
+        height: auto;
+    }
+
+    .header nav #navbar li{
+        width: 7%;
+        justify-content: space-between;
+    }
+    .header nav #navbar li a{
+        font-size: 15px;
+    }
+
+    .hemsworth{
+        height: 300px;
+    }
+
+    .jamrol{
+        height: 460px;
+    }
+
+    .hemsworth .ts h1{
+        font-size: 20px;
+        line-height: 40px;
+        width: 250px;
+    }
+
+    .jamrol h3{
+        font-size: 10px;
+    }
+
+    .jamrol .pencet{
+        font-size: 10px;
+    }
+
+    .jamrol .depan,
+    .jamtu .ap,
+    .jamtri .ap{
+        height: 430px;
+    }
+
+    .jamrol .dalam,
+    .jamtu .don, 
+    .jamtri .don{
+        height: 400px;
+    }
+
+    .jamlon,
+    .sokwe,
+    .teh{
+        height: 450px;
+    }
+
+    .jamlon h3,
+    .sokwe h3,
+    .teh h3{
+        font-size: 10px;
+    }
+
+    .jamlon .push,
+    .sokwe .hush,
+    .teh .hush,
+    .tah .huy,
+    .toh .blub{
+        font-size: 10px;
+    }
+
+    .jamlon .fir,
+    .sokwe .rif,
+    .teh .rif{
+        height: 420px;
+    }
+
+    .fir .sec,
+    .sokwe .ces,
+    .teh .ces{
+        height: 390px;
+    }
+
+    .footer .social a img{
+        width: 30%;
+    }
+
+    .footer .social h4{
+        font-size: 10px;
+    }
+
+     .social{
+        margin-left: -150px;
+    }
+
+    .footer .site h2{
+        font-size: 22px;
+        margin-left: -50px;
+    }
+
+    .footer .supp h2,
+    .footer .company h2{
+        font-size: 20px;
+        margin-left: -20px;
+        
+    }
+
+    .footer .site li a,
+    .footer .supp li a,
+    .footer .company li a{
+        font-size: 10px;
+        margin-left: -20px;
+    }
+
+    .footer .site li a{
+        margin-left: -50px;
+    }
+
+    .footer .company{
+        width: 50px;
+    }
+}

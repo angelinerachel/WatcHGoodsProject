@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link href = "img/logokunih.png" rel = "shortcut icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@600&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link rel = "stylesheet" href = "stylecoy.css">
+</head>
+<body>
+    <!-- header -->
+    <section class = "header">
+        <a href="index.html"><img src="img/logokunih.png" class="logo" alt=""></a>
+
+        <nav>
+            <ul id="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="locations.html">Locations</a></li>
+                <li><a class="active" href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </section>
+
+    <section class="pagar">
+        <div class="pintu">
+            <div class="gembok">
+                <h1>Contact Us</h1>
+                <h3>You can easily get in touch with us by filling out the contact form below.</h3>
+                <div class="area">
+                    <div class="key">
+                        <form action="" method="post" id="form">
+                            <br>
+                            <div class="new">
+                            <div class="hadehya">
+                                <label class="group" for="fname">Full Name :</label>
+                                <br>
+                                <label class="group" for="email">Email :</label>
+                                <br>
+                                <label class="group" for="country">Country Region :</label>
+                                <br>
+                                <label class="group"for="bodynih">Email Body (Message):</label>
+                            </div>
+
+                            <div class="yokmsk">
+                                <div class="editdulu">
+                                    <input type="text" name="fname" id="fname" placeholder="Full Name" required>
+                                </div>
+                                <br>
+                                <div class="lanjut">
+                                    <input type="email" name="email" id="email" placeholder="Email" required>
+                                <br>
+                                    <input type="text" name="country" id="country" placeholder="Country Region" required>
+                                <br>
+                                </div>
+                                <div class="ada">
+                                    <input type="text" name="bodynih" id="bodynih" placeholder="Email Body (Message)" required>
+                                </div>
+                            </div>
+                            </div>
+                            <div class="check">
+                                <input type="checkbox" name="agree" id="agree" required>
+                                <div class="tulis" >
+                                    <label for="agree">By checking the box, you agree to receive a copy of your message </label>
+                                </div>
+                            </div>
+                            
+                            <div class="pencet">
+                                <div class="reset">
+                                    <button type="reset"> RESET </button>
+                                </div>
+                            
+                                <div class="submit"> 
+                                    <button type="submit" onclick="validateDulu()"> SUBMIT </button>
+                                </div> 
+                          </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="footer">
+        <div class="social">
+            <a href="index.html"><img src="img/logokunih.png" class="logofoot" alt="Logo WatcHGoods"></a>
+            <h4 class="follow">Follow our socials!</h4>
+            <a class ="ikon" href="#"><i data-feather="facebook"></i></a>
+            <a class ="ikon" href="#"><i data-feather="twitter"></i></a>
+            <a class ="ikon" href="#"><i data-feather="linkedin"></i></a>
+            <a class ="ikon" href="#"><i data-feather="instagram"></i></a>
+            <h4 class="mail">info@watchgoods.com</h4>
+        </div>
+
+        <div class="site">
+            <h2>SITE MAP</h2>
+           <li> <a href="index.html">Home</a> </li>
+           <li> <a href="products.html">Products</a> </li>
+           <li> <a href="about.html">About Us</a> </li>
+           <li> <a href="locations.html">Locations</a> </li>
+           <li> <a href="contact.html">Contact Us</a> </li>
+        </div>
+        
+        <div class="supp">
+            <h2>SUPPORT</h2>
+           <li> <a href="#">Help</a> </li>
+           <li> <a href="#">Size Information</a> </li>
+           <li> <a href="#">How to change your strap</a> </li>
+           <li> <a href="#">How to adjust your mesh strap</a> </li>
+        </div>
+
+        <div class="company">
+            <h2>COMPANY</h2>
+           <li> <a href="about.html">About Us</a> </li>
+           <li> <a href="locations.html">Locations</a> </li>
+           <li> <a href="contact.html">Contact Us</a> </li>
+        </div>
+        
+    </section>
+
+    <section class="footerend">
+        <h5>Copyright © 2023 WatcHGoods • All Rights Reserved.</h5>
+    </section>
+
+    <script>
+        feather.replace()
+      </script>
+</body>
+<script src="script.js"></script>
+</html>

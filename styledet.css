@@ -1,0 +1,386 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Prompt';
+}
+
+.header{
+    display: flex;
+    height: 90px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    background-color: black;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.06)
+}
+
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#navbar li{
+    list-style: none;
+    padding: 0 25px;
+    position: relative;
+}
+
+#navbar li a{
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 600;
+    color: white;
+}
+
+#navbar li a:hover,
+#navbar li a.active{
+    color: #D4AF37;
+}
+
+#navbar li a::after,
+#navbar li a.active::after{
+    content: "";
+    width: 0%;
+    height: 2px;
+    background: red;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+
+#navbar li a:hover::after,
+#navbar li a.active::after{
+    width: 75%;
+    transition: 0.3s ease;
+}
+
+.logo{
+    position: absolute;
+    width: 148px;
+    height: 120px;
+    left: 40px;
+    top: 6px;
+} 
+
+.ln .eropa{
+    background: #D4AF37;
+    margin: 20px;
+    height: 1300px;
+    border-radius: 10px;
+}
+
+.eropa .aus{
+    position: absolute;
+    background: white;
+    margin-top: 40px;
+    margin-left: 39px;
+    margin-right: 40px;
+    width: 91%;
+    height: 1200px;
+    box-shadow: 0px 10px 40px rgba(0, 15, 129, 0.08);
+    border-radius: 10px;
+    text-align: center;
+}
+
+.aus h1{
+    padding-top: 50px;
+    padding-bottom: 30px;
+    font-family: 'Prompt';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 70px;
+    line-height: 46px;
+    text-align: center;
+}
+
+.aus img{
+    width: 25%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.aus .ha{
+    position: absolute;
+    width: 50%;
+}
+
+.aus .ha h2{
+    text-align: right;
+    width: 40%;
+    font-family: 'Prompt';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 100px;
+    margin-left: 140px;
+}
+
+.aus .ho h2{
+    text-align: justify;
+    width: 60%;
+    font-family: 'Prompt';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 100px;
+    margin-left: 400px;
+}
+
+.aus .ho h3{
+    text-align: justify;
+    margin-left: 400px;
+    margin-top: 20px;
+    width: 60%;
+    font-family: 'Prompt';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 60px;
+    margin-left: 400px;
+}
+
+.aus .hush{
+    background-color: black;
+    margin-top: 30px;
+    margin-left: 500px;
+    margin-right: 500px;
+    padding: 15px 15px;
+    background-repeat: no-repeat;
+    font-weight: 600;
+    font-size: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.hush a{
+    text-decoration: None;
+    color: white;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.hush:hover{
+    background-color:red;
+    transform: scale(0.9);
+    transition: 0.5s ease;
+}
+
+.img img:hover{
+    transform: scale(1.1);
+    transition: 0.3s ease;
+}
+
+.footer{
+    margin-top: 40px;
+    background-color: black;
+    height: 310px;
+}
+
+.footer .social{
+    position: absolute;
+    text-align: center;
+} 
+
+.social .logofoot{
+    width: 43%;
+}
+
+.social h4{
+    justify-content: center;
+    padding-top: 5px;
+    font-weight: 100;
+    padding-bottom: 10px;
+}
+
+.social .ikon{
+    color: #D4AF37;
+}
+
+.ikon:hover{
+    color: white;
+}
+
+.social h4.follow{
+    color: white;
+}
+
+.social h4.mail{
+    color: white;
+}
+
+.footerend{
+    justify-content: center;
+    height: auto;
+    background-color: #D4AF37;
+}
+
+.footerend h5{
+    font-size: 20px;
+    line-height: 4;
+    text-align: center;
+}
+
+.footer .site{
+    margin-left: 40%;
+    padding-top: 60px;
+    width: 200px;
+}
+
+.site h2{
+    color: white;
+    font-size: 16;
+    font-weight: 10%;
+    padding-bottom: 10px;
+    width: 120px;
+}
+
+.site li{
+    list-style: none;
+    padding: 3px;
+    width: 120px;
+}
+
+.site a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 20px;
+}
+
+.site a:hover{
+    color: gold;
+    font-weight: 800;
+}
+
+.footer .supp{
+    width: 400px;
+    margin-left: 55%;
+    margin-top: -196px;
+}
+
+.supp h2{
+    color: white;
+    font-size: 16;
+    font-weight: 10%;
+    padding-bottom: 10px;
+    width: 120px;
+}
+
+.supp li{
+    list-style: none;
+    padding: 3px;
+    width: 230px;
+}
+
+.supp a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 20px;
+}
+
+.supp a:hover{
+    color: gold;
+    font-weight: 800;
+}
+
+.footer .company{
+    margin-left: 78%;
+    margin-top: -168px;
+}
+
+.company h2{
+    color: white;
+    font-size: 16;
+    font-weight: 10%;
+    padding-bottom: 10px;
+    width: 120px;
+}
+
+.company li{
+    list-style: none;
+    padding: 3px;
+    width: 230px;
+}
+
+.company a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 20px;
+}
+
+.company a:hover{
+    color: gold;
+    font-weight: 800;
+}
+
+@media(max-width: 800px){
+    .header img{
+        width: 15%;
+        height: auto;
+    }
+
+    .header nav #navbar li{
+        width: 7%;
+        justify-content: space-between;
+    }
+    .header nav #navbar li a{
+        font-size: 15px;
+    }
+
+    
+
+    .footer .social a img{
+        width: 30%;
+    }
+
+    .footer{
+        margin-top: 1130px;
+    }
+
+    .footer .social h4{
+        font-size: 10px;
+    }
+
+     .social{
+        margin-left: -150px;
+    }
+
+    .footer .site h2{
+        font-size: 22px;
+        margin-left: -50px;
+    }
+
+    .footer .supp h2,
+    .footer .company h2{
+        font-size: 20px;
+        margin-left: -20px;
+        
+    }
+
+    .footer .site li a,
+    .footer .supp li a,
+    .footer .company li a{
+        font-size: 10px;
+        margin-left: -20px;
+    }
+
+    .footer .site li a{
+        margin-left: -50px;
+    }
+
+    .footer .company{
+        width: 50px;
+    }
+}
